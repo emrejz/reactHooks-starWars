@@ -5,6 +5,7 @@ export const GetStarWars = (url, depen) => {
   const [isLoading, setIsLoading] = useState(false);
   const [fetcedData, setFetchedData] = useState(null);
   useEffect(() => {
+    console.log("servis");
     setIsLoading(true);
     axios
       .get(url)

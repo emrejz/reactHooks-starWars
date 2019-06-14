@@ -1,5 +1,7 @@
 import React from "react";
 const SelectGender = props => {
+  console.log("SelectGender");
+
   return (
     <div className="SelectGender">
       <input type="radio" name="sec" value="male" />
@@ -15,4 +17,4 @@ const SelectGender = props => {
     </div>
   );
 };
-export default SelectGender;
+export default React.memo(SelectGender);

@@ -1,5 +1,7 @@
 import React from "react";
 const CardChar = props => {
+  console.log("card char");
+
   return (
     <div className="CardChar">
       <h2>Name:</h2>
@@ -9,4 +11,4 @@ const CardChar = props => {
     </div>
   );
 };
-export default CardChar;
+export default React.memo(CardChar);
