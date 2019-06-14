@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-const getStarWars = (url, depen) => {
+export const GetStarWars = (url, depen) => {
   const [isLoading, setIsLoading] = useState(false);
-  const [fetcedData, setFetchedData] = useState([]);
+  const [fetcedData, setFetchedData] = useState(null);
   useEffect(() => {
     setIsLoading(true);
-    fetch(url)
+    axios
+      .get(url)
       .then(res => {
-        if (!res.ok) {
-          setIsLoading(false);
-          throw new Error("hata");
-        }
-        return res.result.json();
+        if (res.status !== 200) throw new Error("status no 200");
+        return res.data.results;
       })
       .then(res => {
         setIsLoading(false);
@@ -19,10 +18,8 @@ const getStarWars = (url, depen) => {
       })
       .catch(err => {
         setIsLoading(false);
-        throw new Error("swapi fetch error: ", err);
+        console.log(err);
       });
-  }, [depen]);
-  return <div />;
+  }, depen);
+  return [isLoading, fetcedData];
 };
-
-export default [isLoading, fetcedData];

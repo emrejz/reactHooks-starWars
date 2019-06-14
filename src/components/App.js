@@ -1,10 +1,10 @@
 import React from "react";
-import { SelectChar } from "./SelectChar";
+import SelectChar from "./SelectChar";
 import "../css/App.css";
-import { CardChar } from "./CardChar";
-import { SelectGender } from "./SelectGender";
+import CardChar from "./CardChar";
+import SelectGender from "./SelectGender";
 
-function App() {
+const App = props => {
   return (
     <div className="App">
       <SelectChar />
@@ -12,5 +12,5 @@ function App() {
       <SelectGender />
     </div>
   );
-}
+};
 export default App;
