@@ -1,7 +1,8 @@
+body * {
+  font-family: cursive;
+}
 .App {
   margin: auto;
-  padding-left: 10px;
-  text-align: left;
   width: 400px;
 }
 .selectChar {
@@ -12,17 +13,17 @@
   text-align-last: center;
   background-color: cornflowerblue;
 }
-
+.CardChar {
+  text-indent: 5px;
+}
 .CardChar div {
-  background-color: rgba(011, 211, 11, 0.2);
+  background-color: rgba(113, 177, 236, 0.2);
   border-radius: 10px;
   margin-bottom: 5px;
   padding: 10px 0;
+  font-weight: bold;
 }
-.CardChar h2 {
-  padding: 0;
-  margin: 0;
-}
+
 .SelectGender {
   font-size: 18px;
   display: flex;
@@ -31,7 +32,6 @@
 }
 .SelectGender button {
   font-size: 18px;
-  font-weight: bold;
   margin-left: 20px;
   border-radius: 10px;
 }

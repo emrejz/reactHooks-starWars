@@ -6,18 +6,18 @@ import SelectGender from "./SelectGender";
 import getStarWars from "../services/getStarWars";
 
 const App = props => {
-  const [selectedChar, setSelectedChar] = useState("Luke Skywalker");
+  const [selectedChar, setSelectedChar] = useState(1);
   const selectCharFunc = char => {
     setSelectedChar(char);
   };
   console.log("app");
 
   return (
-    <React.Fragment className="App">
+    <div className="App">
       <SelectChar selectCharFunc={selectCharFunc} />
-      <CardChar />
+      <CardChar selectedChar={selectedChar} />
       <SelectGender />
-    </React.Fragment>
+    </div>
   );
 };
 export default App;
