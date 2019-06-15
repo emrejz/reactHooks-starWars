@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export const GetStarWars = (url, depen) => {
-  const [isLoading, setIsLoading] = useState(false);
+export const GetStarWars = (url, dep) => {
+  const [isLoading, setIsLoading] = useState(true);
   const [fetcedData, setFetchedData] = useState(null);
   useEffect(() => {
-    console.log("servis ", url);
     setIsLoading(true);
     axios
       .get(url)
@@ -21,6 +20,6 @@ export const GetStarWars = (url, depen) => {
         setIsLoading(false);
         console.log(err);
       });
-  }, depen);
+  }, dep);
   return [isLoading, fetcedData];
 };

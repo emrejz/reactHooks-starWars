@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { GetStarWars } from "../services/getStarWars";
 const SelectChar = props => {
   let [isLoading, fetchedData] = GetStarWars("https://swapi.co/api/people", []);
   if (fetchedData) {
     fetchedData = fetchedData.results;
   }
-  console.log("selectChar");
   let content = "Loading charecters ..";
   if (!isLoading && fetchedData && fetchedData.length > 0) {
     content = (
