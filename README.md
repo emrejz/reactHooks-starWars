@@ -4,7 +4,7 @@
 
 - Created this project for learning react hooks
 - Star wars api > [Link](https://swapi.co/api/)
-- Live demo > [Link](str-wrs.surge.sh)
+- Live demo > [Link](http://str-wrs.surge.sh)
 
 ### Run the app
 
