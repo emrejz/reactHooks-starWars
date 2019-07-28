@@ -1,9 +1,8 @@
-![](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj__5_8ltjjAhXRCewKHUPpA7cQjRx6BAgBEAU&url=https%3A%2F%2Fen.clipdealer.com%2Fvector%2Fmedia%2FA%3A118769774&psig=AOvVaw0YnUJtO-A1l_Y2R4wZGQMZ&ust=1564422634593490)
+![](https://images.mobilefun.co.uk/graphics/productmisc/55542/Star-Wars-banner.jpg)
 
 ### Project
 
-- Created this project for learning react hooks
-- Star wars api > [Link](https://swapi.co/api/)
+- I just created this project for learning react hooks, i didnt care about ui
 - Live demo > [Link](http://str-wrs.surge.sh)
 
 ### Run the app
